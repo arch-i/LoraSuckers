@@ -1,10 +1,11 @@
+import os
+
 from openai import OpenAI
 import subprocess
 
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MODEL = os.getenv("OPENAI_MODEL", "whisper-1")
-
 
 # Initialize OpenAI client
 client = OpenAI(api_key=OPENAI_API_KEY)
@@ -51,4 +52,3 @@ def transcribe_audio(audio_path, response_format="verbose_json", timestamp_granu
     except Exception as e:
         print(f"Transcription failed: {str(e)}")
         return None
-    
