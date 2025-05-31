@@ -20,7 +20,7 @@ Additional Creative Rules:
 - Avoid generic imagery. Focus on storytelling.
 
 Output Format:
-{'timestamp': ..., 'prompt': ...}
+{'prompt': ...}
 
 Only return the output in this format.
 """
@@ -32,7 +32,7 @@ FEW_SHOT_EXAMPLES_3 = [
     },
     {
         "role": "assistant",
-        "content": "{'timestamp': '00:05-00:10', 'prompt': 'a cozy kitchen with protein-rich food on the table (chicken, eggs, vegetables), dimly lit bedroom in background with someone peacefully sleeping — cinematic lighting, conveying recovery and nutrition'}"
+        "content": "{'prompt': 'a cozy kitchen with protein-rich food on the table (chicken, eggs, vegetables), dimly lit bedroom in background with someone peacefully sleeping — cinematic lighting, conveying recovery and nutrition'}"
     },
     {
         "role": "user",
@@ -40,6 +40,6 @@ FEW_SHOT_EXAMPLES_3 = [
     },
     {
         "role": "assistant",
-        "content": "{'timestamp': '00:10-00:14', 'prompt': 'a retro Blockbuster storefront with glowing blue-and-yellow signage, contrasted by a sleek Netflix UI projected onto a screen in the foreground — dramatic lighting, evoking missed opportunity'}"
+        "content": "{'prompt': 'a retro Blockbuster storefront with glowing blue-and-yellow signage, contrasted by a sleek Netflix UI projected onto a screen in the foreground — dramatic lighting, evoking missed opportunity'}"
     }
 ]
