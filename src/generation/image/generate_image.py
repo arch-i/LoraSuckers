@@ -104,6 +104,3 @@ def generate_prompt_for_text_to_image(
     generated_prompt = generated_prompt.choices[0].message.content
 
     return generated_prompt
-
-
-generate_prompt_for_text_to_image(summary="")
