@@ -18,7 +18,11 @@ from PIL import Image
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MODEL = "gpt-image-1"
 
-with open("prompt_for_text_to_image.txt", "r") as f:
+# Get the directory of this script to find the prompt file
+script_dir = os.path.dirname(os.path.abspath(__file__))
+prompt_file_path = os.path.join(script_dir, "..", "prompts", "prompt_for_text_to_image.txt")
+
+with open(prompt_file_path, "r") as f:
     prompt_for_text_to_image = f.read()
 
 # Initialize OpenAI client
